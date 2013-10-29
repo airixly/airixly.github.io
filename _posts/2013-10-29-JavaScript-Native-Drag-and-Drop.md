@@ -10,10 +10,10 @@ HTML5指定任意元素的*draggable*属性为*true*来让其能够被拖动,*dr
 {% highlight ruby %}
 var self = this;
 $("#drag-target").attr("draggable").on("dragstart",function(e){
-	//如果需要改变默认拖动图标
+	/*如果需要改变默认拖动图标*/
 	self.createDragImage();
 }).on("dragend",function(e){
-		//如果改变了默认拖动图标,完成拖动后要清除
+		/*如果改变了默认拖动图标,完成拖动后要清除*/
 		self.clearDragImage();
 	});
 {% endhighlight %}
@@ -27,21 +27,21 @@ function createDragImage(){
 	dragImage.className = "drag-helper"
 	dragImage.innerHTML = template;
 
-	//必须把创建的元素添加到DOM节点中
+	/*必须把创建的元素添加到DOM节点中*/
 	$("#container").append(dragImage);
 	
-	//设置拖动时光标显示内容
+	/*设置拖动时光标显示内容*/
 	e.dataTransfer.setDragImage(dragImage,0,0);
 }
 
 function clearDragImage(){
 	$(".drag-helper").remove();
 }
+{% endhighlight %}
 
-//隐藏dragImage,但要保证拖动的时候能显示出来
-//设置display:none,visibility:hidden,opacity:0都会隐藏dragImage,但拖动时也不会显示
-//所以要把dragImage放在可视区中,坐标必须设置在可视区内
-//style
+隐藏dragImage,但要保证拖动的时候能显示出来.如果设置display:none,visibility:hidden,opacity:0都会隐藏dragImage,但拖动时也不会显示.所以要把dragImage放在可视区中,坐标必须设置在可视区内
+
+{% highlight ruby %}
 .drag-helper,.cover{
 	position:absolute;
 	top:0;
@@ -49,7 +49,7 @@ function clearDragImage(){
 	width:100px;
 	height:20px;
 }
-	//用同级的元素覆盖dragImage
+/*用同级的元素覆盖dragImage*/
 .drag-helper{
 	z-index:0
 }
@@ -69,7 +69,7 @@ z-index的值是相对于同级元素的,应用于设置了position的元素
         <p>two</p>
     </div>
 	
-	//style
+	/*style*/
 	.one,.two{
 		position: absolute;
         top: 50px;
@@ -111,6 +111,6 @@ $("#drop-target").on("dragenter",function(e){
 
 {% highlight ruby %}
 $("#drop-target").on("drop",function(e){
-	//TODO
+	/*TODO*/
 });
 {% endhighlight %}
