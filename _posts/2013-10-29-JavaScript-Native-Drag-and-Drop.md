@@ -59,8 +59,7 @@ function clearDragImage(){
 {% endhighlight %}
 
 ####关于z-index
-
-`z-index的值是相对于同级元素的,应用于设置了position的元素`
+z-index的值是相对于同级元素的,应用于设置了position的元素
 
 {% highlight ruby %}
     <div class="one">
