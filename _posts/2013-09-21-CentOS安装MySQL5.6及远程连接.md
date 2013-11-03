@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CentOS安装MySQL5.6及远程连接"
+title:  CentOS安装MySQL5.6及远程连接
 ---
 
   首先从mysql官网下载MySQL Community Server，在Select Platform处选择Source Code，然后选择Generic Linux(Architecture Independent)，Compressed TAR Archive。
