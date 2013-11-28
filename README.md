@@ -1,4 +1,4 @@
 airixly.github.io
 =================
 
-Airixly
+[Airixly Blog](http://airixly.github.io)
