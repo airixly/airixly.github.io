@@ -1,3 +1,12 @@
 #disqus_thread{
     margin-top:100px;
 }
+#project_fork{
+    margin:0;
+    padding:0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+}
