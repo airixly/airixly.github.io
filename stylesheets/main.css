@@ -1,3 +1,16 @@
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body,#header_wrap,#footer_wrap{
+    background:#f2f2f2;
+}
+#main_content_wrap{
+    border:0;
+}
+#project_tagline{
+    text-shadow:none;
+    color:#563d7c;
+}
 #disqus_thread{
     margin-top:100px;
 }
