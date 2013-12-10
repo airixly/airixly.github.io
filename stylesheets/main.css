@@ -7,9 +7,13 @@ body,#header_wrap,#footer_wrap{
 #main_content_wrap{
     border:0;
 }
-#project_tagline{
+#project_title{
     text-shadow:none;
+}
+#project_title a{
+    text-decoration:none;
     color:#563d7c;
+    outline:none;
 }
 #disqus_thread{
     margin-top:100px;
