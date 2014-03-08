@@ -28,7 +28,7 @@ body,#header_wrap,#footer_wrap{
     -ms-box-shadow: none;
 }
 @media screen and (max-width:480px){
-    #main_content{
+    .inner{
         min-width:300px;
     }
 }
