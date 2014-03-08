@@ -27,3 +27,8 @@ body,#header_wrap,#footer_wrap{
     -o-box-shadow: none;
     -ms-box-shadow: none;
 }
+@media screen and (max-width:480px){
+    #main_content{
+        min-width:300px;
+    }
+}
